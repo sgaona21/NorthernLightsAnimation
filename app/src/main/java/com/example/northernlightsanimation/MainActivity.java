@@ -1,5 +1,6 @@
 package com.example.northernlightsanimation;
 
+import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 lightsAnimation.stop();
+                startActivity(new Intent(MainActivity.this, Tween.class));
             }
         });
 
